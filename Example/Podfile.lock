@@ -1,0 +1,16 @@
+PODS:
+  - Felidae (0.1.0)
+
+DEPENDENCIES:
+  - Felidae (from `../`)
+
+EXTERNAL SOURCES:
+  Felidae:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Felidae: 46a80d52a5d21ee10d7df3c58030356aeede13d5
+
+PODFILE CHECKSUM: 100a2f3b31e104858d76085ebd310f071f386356
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,10 @@
+use_frameworks!
+
+target 'Felidae_Example' do
+  pod 'Felidae', :path => '../'
+
+  target 'Felidae_Tests' do
+    inherit! :search_paths
+
+  end
+end
