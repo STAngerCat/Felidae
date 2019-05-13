@@ -9,9 +9,9 @@ import Foundation
 
 public struct STFStringAttibute {
     
-    private var attributedDictionary: [NSAttributedStringKey : Any] = [:]
+    private var attributedDictionary: [NSAttributedString.Key : Any] = [:]
     
-    public let paragraphStyle = NSMutableParagraphStyle()
+    public lazy var paragraphStyle = NSMutableParagraphStyle()
     
     public var font: UIFont? {
         didSet {
@@ -89,13 +89,13 @@ public struct STFStringAttibute {
     }
     
     
-    public var kern: Float {
+    public var kern: Float = 0 {
         didSet {
             self.attributedDictionary[.kern] = kern
         }
     }
     
-    public var verticalGlyphForm: Int {
+    public var verticalGlyphForm: Int = 0 {
         didSet {
             self.attributedDictionary[.verticalGlyphForm] = verticalGlyphForm
         }
@@ -134,6 +134,7 @@ public struct STFStringAttibute {
     }
     
     init() {
+        
     }
     
     public func create(with string: String) -> NSAttributedString {

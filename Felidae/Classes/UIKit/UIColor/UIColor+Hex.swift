@@ -9,11 +9,11 @@ import UIKit
 
 public extension UIColor {
     
-    public convenience init?(stf_hex: String) {
+    convenience init?(stf_hex: String) {
         self.init(stf_hex: stf_hex, alpha: 0)
     }
     
-    public convenience init?(stf_hex: String, alpha: CGFloat) {
+    convenience init?(stf_hex: String, alpha: CGFloat) {
         let hexString = stf_hex as NSString
         let matchRange = hexString.range(of: "^[0-9a-fA-F]{6}", options: .regularExpression)
         if matchRange.location == NSNotFound {
